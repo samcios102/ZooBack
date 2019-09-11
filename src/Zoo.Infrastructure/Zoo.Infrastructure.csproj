@@ -1,7 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>netcoreapp2.2</TargetFramework>
     </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Queries" />
+      <Folder Include="RabbitMq" />
+      <Folder Include="Repositories" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Zoo.Application\Zoo.Application.csproj" />
+      <ProjectReference Include="..\Zoo.Core\Zoo.Core.csproj" />
+    </ItemGroup>
 
 </Project>
