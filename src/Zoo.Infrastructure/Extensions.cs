@@ -1,8 +1,7 @@
-﻿using System;
-
 namespace Zoo.Infrastructure
 {
-    public class Class1
+    public class Extensions
     {
+        
     }
 }

@@ -1,7 +1,30 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>netcoreapp2.2</TargetFramework>
     </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Databases\nHibernate\Entities\Extensions" />
+      <Folder Include="Databases\nHibernate\Entities\Mappings" />
+      <Folder Include="Repositories" />
+      <Folder Include="Services" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Zoo.Application\Zoo.Application.csproj" />
+      <ProjectReference Include="..\Zoo.Core\Zoo.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.2.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.2.4" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+      <PackageReference Include="NHibernate" Version="5.2.6" />
+      <PackageReference Include="NHibernate.Linq" Version="1.0.0" />
+      <PackageReference Include="RabbitMQ.Client" Version="5.1.1" />
+      <PackageReference Include="Scrutor" Version="3.1.0" />
+    </ItemGroup>
 
 </Project>
