@@ -1,7 +1,9 @@
+using System;
+
 namespace Zoo.Infrastructure.Databases
 {
-    public class DbModel
+    internal class DbModel
     {
-        
+        public virtual Guid Id { get; set; }
     }
 }
