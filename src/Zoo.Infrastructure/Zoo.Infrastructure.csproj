@@ -5,9 +5,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Queries" />
       <Folder Include="RabbitMq" />
       <Folder Include="Repositories" />
+      <Folder Include="Services" />
     </ItemGroup>
 
     <ItemGroup>
