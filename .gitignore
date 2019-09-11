@@ -554,3 +554,11 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+
+#samiDoneIt
+*.idea/indexLayout.xml
+*.idea/modules.xml
+*.idea/projectSettingsUpdater.xml
+*.idea/vcs.xml
+riderModule.iml
+
