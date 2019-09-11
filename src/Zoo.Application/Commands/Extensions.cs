@@ -6,7 +6,7 @@ namespace Zoo.Application.Commands
     {
         public static void AddCommandHandlers(this IServiceCollection services)
         {
-            var autoService = services.Scan(scan =>
+            services.Scan(scan =>
             {
                 scan.FromAssemblyOf<ICommand>()
                     .AddClasses(c => c.AssignableTo(typeof(ICommandHandler<>)))

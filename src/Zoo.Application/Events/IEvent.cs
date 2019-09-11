@@ -1,6 +1,6 @@
 namespace Zoo.Application.Events
 {
-    public class IEvent
+    public interface IEvent
     {
         
     }
