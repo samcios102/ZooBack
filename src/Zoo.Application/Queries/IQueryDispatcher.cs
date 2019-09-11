@@ -1,7 +1,9 @@
+using System.Threading.Tasks;
+
 namespace Zoo.Application.Queries
 {
-    public class IQueryDispatcher
+    public interface IQueryDispatcher
     {
-        
+        Task<TResult> DispatchAsync<TQuery, TResult>(TQuery query) where TQuery : IQuery<TResult>;
     }
 }

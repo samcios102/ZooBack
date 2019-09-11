@@ -1,6 +1,6 @@
 namespace Zoo.Application.Queries
 {
-    public class IQuery
+    public interface IQuery<TResult>
     {
         
     }
