@@ -1,7 +1,9 @@
+using System.Threading.Tasks;
+
 namespace Zoo.Application.Commands
 {
-    public class ICommandHandler
+    public interface ICommandHandler<TCommand> where TCommand : ICommand
     {
-        
+        Task HandleAsync(TCommand command);
     }
-}
+} 

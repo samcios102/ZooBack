@@ -1,6 +1,6 @@
 namespace Zoo.Application.Commands
 {
-    public class ICommand
+    public interface ICommand
     {
         
     }

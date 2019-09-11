@@ -39,6 +39,10 @@
           "version": "[2.2.0, )",
           "autoReferenced": true
         },
+        "Scrutor": {
+          "target": "Package",
+          "version": "[3.1.0, )"
+        },
         "xunit": {
           "target": "Package",
           "version": "[2.4.0, )"
