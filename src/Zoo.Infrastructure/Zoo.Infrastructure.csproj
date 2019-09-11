@@ -5,7 +5,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="RabbitMq" />
       <Folder Include="Repositories" />
       <Folder Include="Services" />
     </ItemGroup>
@@ -16,6 +15,11 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.2.0" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.2.4" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+      <PackageReference Include="RabbitMQ.Client" Version="5.1.1" />
       <PackageReference Include="Scrutor" Version="3.1.0" />
     </ItemGroup>
 
