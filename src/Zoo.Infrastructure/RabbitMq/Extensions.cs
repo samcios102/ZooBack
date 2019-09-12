@@ -6,7 +6,7 @@ namespace Zoo.Infrastructure.RabbitMq
 {
     internal static class Extensions
     {
-        public static IServiceCollection AddRabitMq(this IServiceCollection serviceCollection)
+        public static void AddRabbitMq(this IServiceCollection serviceCollection)
         {
             serviceCollection.AddOption<RabbitMqOptions>("rabbitMq");
             serviceCollection.AddSingleton(sp =>
@@ -26,7 +26,6 @@ namespace Zoo.Infrastructure.RabbitMq
 
             serviceCollection.AddSingleton<IMessagePublischer, MessagePublischer>();
             serviceCollection.AddSingleton<IMessageSubscriber, MessageSubscriber>();
-            return serviceCollection;
         }
     }
 }
