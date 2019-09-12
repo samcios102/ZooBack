@@ -20,7 +20,7 @@ namespace Zoo.Infrastructure.Databases.nHibernate.Entities.Extensions
                 Localisation = animal.Localisation
             };
 
-        public static IEnumerable<AnimalDto> AsEnumerableDto(this IEnumerable<Animal> animals)
+        public static IEnumerable<AnimalDto> AsEnumerableDto(this IEnumerable<AnimalEntity> animals)
             => animals.Select(animal => new AnimalDto
             {
                 Id = animal.Id,
@@ -30,7 +30,7 @@ namespace Zoo.Infrastructure.Databases.nHibernate.Entities.Extensions
                 Localisation = animal.Localisation
             });
         
-        public static AnimalDto AsDto (this Animal animal) 
+        public static AnimalDto AsDto (this AnimalEntity animal) 
             => new AnimalDto
             {
                 Id = animal.Id,
