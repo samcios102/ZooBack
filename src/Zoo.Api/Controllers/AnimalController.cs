@@ -26,9 +26,9 @@ namespace Zoo.Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<AnimalDto>> GetByIdAsync([FromRoute] GetAnimal query)
+        public async Task<ActionResult<AnimalDto>> GetByIdAsync([FromRoute] Guid id)
         {
-            var result = await _queryDispatcher.DispatchAsync<GetAnimal, AnimalDto>(query);
+            var result = await _queryDispatcher.DispatchAsync<GetAnimal, AnimalDto>(new GetAnimal(id));
 
             if (result is null)
             {
@@ -72,6 +72,7 @@ namespace Zoo.Api.Controllers
         public async Task<IActionResult> DeleteAnimalAsync([FromRoute] Guid id)
         {
             await _commandDispatcher.DispatchAsync(new DeleteAnimal(id));
+            
             return Ok();
         }
 

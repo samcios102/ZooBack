@@ -1,7 +1,6 @@
 using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
-using Zoo.Application.Events;
 using Zoo.Application.Queries;
 
 namespace Zoo.Infrastructure.Dispatchers

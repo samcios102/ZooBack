@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading;
 using System.Threading.Tasks;
 using NHibernate;
+using NHibernate.Engine;
 using NHibernate.Linq;
 
 namespace Zoo.Infrastructure.Databases.nHibernate
@@ -30,7 +32,10 @@ namespace Zoo.Infrastructure.Databases.nHibernate
             => PersistAsync(() => _session.MergeAsync(entity));
 
         public Task DeleteAsync(TEntity entity)
-            => PersistAsync(() => _session.DeleteAsync(entity));
+        {
+            _session.Clear();
+            return PersistAsync(() => _session.DeleteAsync(entity));
+        }
 
         private async Task PersistAsync(Func<Task> persist)
         {
@@ -40,5 +45,6 @@ namespace Zoo.Infrastructure.Databases.nHibernate
                 await transaction.CommitAsync();
             }
         }
+        
     }
 }

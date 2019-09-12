@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using NHibernate;
 using Zoo.Core.Entities;
 using Zoo.Core.Repositories;
 using Zoo.Infrastructure.Databases;
@@ -30,6 +31,8 @@ namespace Zoo.Infrastructure.Repositories
             => _repository.UpdateAsync(animal.AsEntity());
 
         public Task DeleteAsync(Animal animal)
-            => _repository.DeleteAsync(animal.AsEntity());
+        {
+            return _repository.DeleteAsync(animal.AsEntity());
+        }
     }
 }

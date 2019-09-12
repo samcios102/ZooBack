@@ -7,6 +7,7 @@ using Zoo.Application.Queries.Animals;
 using Zoo.Infrastructure.Databases;
 using Zoo.Infrastructure.Databases.nHibernate.Entities;
 using Zoo.Infrastructure.Databases.nHibernate.Entities.Extensions;
+using static System.String;
 
 namespace Zoo.Infrastructure.Queries.AnimalHandlers
 {
@@ -23,13 +24,14 @@ namespace Zoo.Infrastructure.Queries.AnimalHandlers
         {
             var entities = await _repository
                 .SearchAsync(animal =>
-                    animal.Name.ToLower().Contains(query.Name.ToLower())); 
+                    !query.Habitat.HasValue || 
+                    animal.Habitat == query.Habitat);
 
             entities = entities
                 .Where(animal => 
-                    !query.Habitat.HasValue || 
-                    animal.Habitat == query.Habitat
-                    );
+                    IsNullOrEmpty(query.Name) ||
+                    animal.Name.ToLower().Contains(query.Name.ToLower()));
+            
 
             entities = entities
                 .Where(animal =>
