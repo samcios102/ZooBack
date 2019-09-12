@@ -44,6 +44,7 @@ namespace Zoo.Infrastructure.Queries.AnimalHandlers
                     );
 
             return entities.AsEnumerableDto();
+            
         }
     }
 }
