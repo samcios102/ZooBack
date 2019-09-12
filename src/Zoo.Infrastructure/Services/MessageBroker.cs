@@ -9,16 +9,16 @@ namespace Zoo.Infrastructure.Services
 {
     internal sealed class MessageBroker : IMessageBroker
     {
-        private readonly IMessagePublischer _publischer;
+        private readonly IMessagePublischer _publisher;
 
-        public MessageBroker(IMessagePublischer publischer)
+        public MessageBroker(IMessagePublischer publisher)
         {
-            _publischer = publischer;
+            _publisher = publisher;
         }
 
         public async Task PublishAsync(params IEvent[] events)
         {
-            var tasks = events.Select(e => _publischer.PublishEventAsync(e));
+            var tasks = events.Select(e => _publisher.PublishEventAsync(e));
             await Task.WhenAll(tasks);
         }
     }

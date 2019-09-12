@@ -11,7 +11,7 @@ namespace Zoo.Infrastructure.Options
             using (var serviceProvider = services.BuildServiceProvider())
             {
                 var configuration = serviceProvider.GetService<IConfiguration>();
-                var options = new  TOption();
+                var options = new TOption();
 
                 configuration.GetSection(section).Bind(options);
                 services.AddSingleton(options);
