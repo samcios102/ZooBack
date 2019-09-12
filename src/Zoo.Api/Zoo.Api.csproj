@@ -12,10 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\Zoo.Application\Zoo.Application.csproj" />
       <ProjectReference Include="..\Zoo.Core\Zoo.Core.csproj" />
       <ProjectReference Include="..\Zoo.Infrastructure\Zoo.Infrastructure.csproj" />

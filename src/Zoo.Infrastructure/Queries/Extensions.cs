@@ -1,7 +1,11 @@
+using System.Collections.Generic;
 using System.Reflection.Metadata.Ecma335;
 using Microsoft.Extensions.DependencyInjection;
+using Zoo.Application.Dto;
 using Zoo.Application.Events;
 using Zoo.Application.Queries;
+using Zoo.Application.Queries.Animals;
+using Zoo.Infrastructure.Queries.AnimalHandlers;
 
 namespace Zoo.Infrastructure.Queries
 {
@@ -9,13 +13,9 @@ namespace Zoo.Infrastructure.Queries
     {
         public static void AddQueryHandlers(this IServiceCollection services)
         {
-            services.Scan(scan =>
-            {
-                scan.FromCallingAssembly()
-                    .AddClasses(c => c.AssignableTo(typeof(IEventHandler<>)))
-                    .AsImplementedInterfaces()
-                    .WithTransientLifetime();
-            });
+           services.AddTransient<IQueryHandler<GetAnimal, AnimalDto>, GetAnimalHandler>();
+           services.AddTransient<IQueryHandler<SearchAnimals, IEnumerable<AnimalDto>>, SearchAnimalsHandler>();
+           
         }
         
     }

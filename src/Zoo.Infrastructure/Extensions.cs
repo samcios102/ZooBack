@@ -8,6 +8,7 @@ using Zoo.Infrastructure.Queries;
 using Zoo.Infrastructure.RabbitMq;
 using Zoo.Infrastructure.RabbitMq.CQRS;
 using Zoo.Infrastructure.Repositories;
+using Zoo.Infrastructure.Services;
 
 namespace Zoo.Infrastructure
 {
@@ -20,7 +21,7 @@ namespace Zoo.Infrastructure
             serviceCollection.AddDatabase();
             serviceCollection.AddDispatchers();
             serviceCollection.AddRepositories();
-            serviceCollection.AddTransient<IMessageBroker, IMessageBroker>();
+            serviceCollection.AddTransient<IMessageBroker, MessageBroker>();
         }
 
         public static void UseInfrastructure(this IApplicationBuilder applicationBuilder)
