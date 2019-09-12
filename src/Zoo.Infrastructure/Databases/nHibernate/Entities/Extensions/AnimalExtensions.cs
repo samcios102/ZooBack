@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Zoo.Application.Dto;
 using Zoo.Core.Entities;
-using Zoo.Infrastructure.Databases.nHibernate.Entities.Mappings;
 
 namespace Zoo.Infrastructure.Databases.nHibernate.Entities.Extensions
 {

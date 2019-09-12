@@ -4,6 +4,7 @@ using NHibernate.Dialect;
 using NHibernate.Driver;
 using NHibernate.Mapping.ByCode;
 using NHibernate.Tool.hbm2ddl;
+using Zoo.Infrastructure.Databases.nHibernate.Entities.Mappings;
 using Zoo.Infrastructure.Options;
 
 namespace Zoo.Infrastructure.Databases.nHibernate
@@ -15,9 +16,7 @@ namespace Zoo.Infrastructure.Databases.nHibernate
         public AppSessionFactory(DatabaseOptions options)
         {
             var mapper = new ModelMapper();
-/*            mapper.AddMapping<AnimalEntityMappings>();
             mapper.AddMapping<AnimalEntityMappings>();
-            mapper.AddMapping<AnimalEntityMappings>();*/
             var domainMapping = mapper.CompileMappingForAllExplicitlyAddedEntities();
 
             var configuration = new Configuration();

@@ -1,7 +1,7 @@
 using Zoo.Core.Entities;
 using Zoo.Core.Enums;
 
-namespace Zoo.Infrastructure.Databases.nHibernate.Entities.Mappings
+namespace Zoo.Infrastructure.Databases.nHibernate.Entities
 {
     internal class AnimalEntity : DbModel
     {

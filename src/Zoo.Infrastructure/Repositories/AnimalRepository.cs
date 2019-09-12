@@ -3,8 +3,8 @@ using System.Threading.Tasks;
 using Zoo.Core.Entities;
 using Zoo.Core.Repositories;
 using Zoo.Infrastructure.Databases;
+using Zoo.Infrastructure.Databases.nHibernate.Entities;
 using Zoo.Infrastructure.Databases.nHibernate.Entities.Extensions;
-using Zoo.Infrastructure.Databases.nHibernate.Entities.Mappings;
 
 namespace Zoo.Infrastructure.Repositories
 {
