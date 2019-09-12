@@ -2,7 +2,7 @@ using System;
 
 namespace Zoo.Infrastructure.Databases
 {
-    internal class DbModel
+    internal abstract class DbModel
     {
         public virtual Guid Id { get; set; }
     }

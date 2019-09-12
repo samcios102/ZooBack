@@ -13,10 +13,12 @@ namespace Zoo.Core.Entities
         public Employee Keeper { get; }
         public Localisation Localisation { get; private set; }
 
-        public Animal(Guid id, string name, Localisation localisation)
+        public Animal(Guid id, string name, HabitatType habitat, Employee keeper ,Localisation localisation)
         {
             Id = id;
             Name = name;
+            Habitat = habitat;
+            Keeper = keeper;
             Localisation = localisation;
         }
 
