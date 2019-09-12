@@ -5,7 +5,7 @@ namespace Zoo.Infrastructure.Repositories
 {
     internal static class Extensions
     {
-        public static void AddRepositories(this ServiceCollection serviceCollection)
+        public static void AddRepositories(this IServiceCollection serviceCollection)
         {
             serviceCollection.AddTransient<IAnimalRepository, AnimalRepository>();
         }
