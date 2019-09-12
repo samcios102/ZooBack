@@ -12,8 +12,8 @@ namespace Zoo.Infrastructure.Databases.nHibernate.Entities.Mappings
             Id(x => x.Id);
             Property(x => x.Name, map => map.NotNullable(true));
             Property(x => x.Habitat, map => map.Type<EnumStringType<HabitatType>>());
-            Property(x => x.Keeper, map => map.Type<Employee>());
-            Property(x => x.Localisation, map => map.Type<Localisation>());
+            //Property(x => x.Keeper, map => map.Type<Employee>());
+            //Property(x => x.Localisation, map => map.Type<Localisation>());
         }
     }
 }
