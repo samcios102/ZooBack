@@ -40,6 +40,5 @@ namespace Zoo.Infrastructure.Databases.nHibernate
                 await transaction.CommitAsync();
             }
         }
-
     }
 }

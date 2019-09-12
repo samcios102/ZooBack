@@ -8,7 +8,6 @@
       <Folder Include="Databases\nHibernate\Entities\Extensions" />
       <Folder Include="Databases\nHibernate\Entities\Mappings" />
       <Folder Include="Repositories" />
-      <Folder Include="Services" />
     </ItemGroup>
 
     <ItemGroup>

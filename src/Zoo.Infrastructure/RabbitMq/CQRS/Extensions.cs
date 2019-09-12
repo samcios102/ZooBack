@@ -16,10 +16,10 @@ namespace Zoo.Infrastructure.RabbitMq.CQRS
             });
         }
 
-        public static Task PublishEventAsync<TEvent>(this IMessagePublischer publischer, TEvent @event)
+        public static Task PublishEventAsync<TEvent>(this IMessagePublischer publisher, TEvent @event)
             where TEvent : class, IEvent
         {
-           return publischer.PublishAsync(@event);
+           return publisher.PublishAsync(@event);
         }
     }
 }
