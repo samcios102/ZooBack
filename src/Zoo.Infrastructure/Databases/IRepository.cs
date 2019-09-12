@@ -10,6 +10,7 @@ namespace Zoo.Infrastructure.Databases
         Task<TDbModel> GetAsync(Guid id);
         Task<IEnumerable<TDbModel>> SearchAsync(Expression<Func<TDbModel, bool>> predicate);
         Task AddAsync(TDbModel entity);
+        Task UpdateAsync(TDbModel entity);
         Task DeleteAsync(TDbModel entity);
     }
 }
