@@ -17,7 +17,20 @@
     },
     "frameworks": {
       "netcoreapp2.2": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Api\\Zoo.Api.csproj": {
+            "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Api\\Zoo.Api.csproj"
+          },
+          "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Application\\Zoo.Application.csproj": {
+            "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Application\\Zoo.Application.csproj"
+          },
+          "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Core\\Zoo.Core.csproj": {
+            "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Core\\Zoo.Core.csproj"
+          },
+          "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Infrastructure\\Zoo.Infrastructure.csproj": {
+            "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Infrastructure\\Zoo.Infrastructure.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
