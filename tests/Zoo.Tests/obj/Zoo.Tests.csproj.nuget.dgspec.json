@@ -4,14 +4,147 @@
     "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\tests\\Zoo.Tests\\Zoo.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\tests\\Zoo.Tests\\Zoo.Tests.csproj": {
+    "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Api\\Zoo.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\tests\\Zoo.Tests\\Zoo.Tests.csproj",
-        "projectName": "Zoo.Tests",
-        "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\tests\\Zoo.Tests\\Zoo.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Api\\Zoo.Api.csproj",
+        "projectName": "Zoo.Api",
+        "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Api\\Zoo.Api.csproj",
         "packagesPath": "C:\\Users\\Samuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\tests\\Zoo.Tests\\obj\\",
+        "outputPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Samuel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Application\\Zoo.Application.csproj": {
+                "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Application\\Zoo.Application.csproj"
+              },
+              "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Core\\Zoo.Core.csproj": {
+                "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Core\\Zoo.Core.csproj"
+              },
+              "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Infrastructure\\Zoo.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Infrastructure\\Zoo.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Application\\Zoo.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Application\\Zoo.Application.csproj",
+        "projectName": "Zoo.Application",
+        "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Application\\Zoo.Application.csproj",
+        "packagesPath": "C:\\Users\\Samuel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Samuel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Core\\Zoo.Core.csproj": {
+                "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Core\\Zoo.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Core\\Zoo.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Core\\Zoo.Core.csproj",
+        "projectName": "Zoo.Core",
+        "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Core\\Zoo.Core.csproj",
+        "packagesPath": "C:\\Users\\Samuel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -39,6 +172,162 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Infrastructure\\Zoo.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Infrastructure\\Zoo.Infrastructure.csproj",
+        "projectName": "Zoo.Infrastructure",
+        "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Infrastructure\\Zoo.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Samuel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Samuel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Application\\Zoo.Application.csproj": {
+                "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Application\\Zoo.Application.csproj"
+              },
+              "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Core\\Zoo.Core.csproj": {
+                "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Core\\Zoo.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NHibernate": {
+              "target": "Package",
+              "version": "[5.2.6, )"
+            },
+            "NHibernate.Linq": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Scrutor": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\tests\\Zoo.Tests\\Zoo.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\tests\\Zoo.Tests\\Zoo.Tests.csproj",
+        "projectName": "Zoo.Tests",
+        "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\tests\\Zoo.Tests\\Zoo.Tests.csproj",
+        "packagesPath": "C:\\Users\\Samuel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\tests\\Zoo.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Samuel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Api\\Zoo.Api.csproj": {
+                "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Api\\Zoo.Api.csproj"
+              },
+              "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Application\\Zoo.Application.csproj": {
+                "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Application\\Zoo.Application.csproj"
+              },
+              "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Core\\Zoo.Core.csproj": {
+                "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Core\\Zoo.Core.csproj"
+              },
+              "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Infrastructure\\Zoo.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Samuel\\Desktop\\Connectis\\ProgramistaDOTNETkurs\\GitLab\\Egzamin\\Backend\\Zoo\\src\\Zoo.Infrastructure\\Zoo.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[15.9.0, )"
@@ -48,6 +337,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[4.2.1, )"
             },
             "Scrutor": {
               "target": "Package",
